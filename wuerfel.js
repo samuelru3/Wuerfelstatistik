@@ -7,9 +7,6 @@ function wurf() {
     let sechs = 0;
     var anzahl = document.getElementById("anzahl").value;
     for (let index = 1; index <= anzahl; index++) {
-
-
-
         let wuerfel = Math.floor(Math.random() * 6) + 1;
         switch (wuerfel) {
             case 1:
@@ -41,14 +38,7 @@ function wurf() {
     document.getElementById("4").innerHTML = vier;
     document.getElementById("5").innerHTML = fünf;
     document.getElementById("6").innerHTML = sechs;
-    // let gesamt=eins+zwei+drei+vier+fünf+sechs;
-    // console.log('Einser: ' + eins);
-    // console.log('Zweier: ' + zwei);
-    // console.log('Dreier: ' + drei);
-    // console.log('Vierer: ' + vier);
-    // console.log('Fünfer: ' + fünf);
-    // console.log('Sechser: ' + sechs);
-    // console.log('Gesamt: ' + gesamt);
-
-
 }
+
+
+

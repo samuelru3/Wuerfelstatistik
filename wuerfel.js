@@ -1,11 +1,22 @@
 
 function move() {
+
+    const cb = document.getElementById('accept');
+    console.log(cb.checked);
+
+
     var i = 0;
     if (i == 0) {
         i = 1;
         var elem = document.getElementById("myBar");
         var width = 0;
-        varid = setInterval(frame, 10);
+        var anzahl = 0;
+        anzahl = document.getElementById("anzahl").value;
+        
+        if (cb.checked) {
+            anzahl = 1;
+        }
+        var id = setInterval(frame, anzahl);
         function frame() {
             if (width >= 100) {
                 clearInterval(id);

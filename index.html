@@ -16,18 +16,21 @@
 
         #anzahl {
             background-color: #0a3286;
-            height: 30px;
             text-align: center;
             line-height: 30px;
             color: white;
+            border: 0em;
+            border-left: 2em blueviolet;
         }
 
         button {
             background-color: #0a3286;
-            height: 30px;
             text-align: center;
             line-height: 30px;
             color: white;
+            border: 0px double blue;
+            border-right: none;
+            margin-right: 4px;
         }
 
         table {
@@ -56,6 +59,18 @@
             line-height: 30px;
             color: white;
         }
+
+        #knopf {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            line-height: 30px;
+            color: white;
+            transform: scale(1.4);
+            font-size: 70%;
+        }
+
     </style>
 </head>
 
@@ -98,15 +113,18 @@
             </td>
         </tr>
     </table>
-    
+
     <div id="eingabe">
         <button onclick="move()">Würfeln</button>
         <input type="number" name="anzahl" id="anzahl">
-        <input type="checkbox" name="check" id="accept">Super Speed
+
     </div>
-    
+
     <div id="myProgress">
         <div id="myBar"></div>
+    </div>
+    <div id="knopf">
+        <input type="checkbox" name="check" id="accept">Super Speed
     </div>
 </body>
 
